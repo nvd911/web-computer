@@ -1,0 +1,33 @@
+<style>
+    .adminAdd_title {
+        font-weight: 500;
+        font-size: 30px;
+    }
+
+    .adminAdd_form {
+        display: flex;
+        flex-direction: column;
+        max-width: 800px;
+    }
+
+    .adminAdd_submit {
+        margin-top: 20px;
+    }
+</style>
+
+
+<p class="adminAdd_title">Thêm sản phẩm</p>
+<form class="adminAdd_form" action="/admin/add" method="post" enctype="multipart/form-data"> <span>Nhập tiêu đề</span>
+    <input name="tieuDe" type="text">
+    <span>Nhập mã sản phẩm</span>
+    <input name="maSP" type="text">
+    <span>Chọn ảnh</span>
+    <input name="avatar" type="file">
+    <span>Nhập tên sản phẩm</span>
+    <input name="tenSP" type="text">
+    <span>Nhập giá gốc</span>
+    <input name="giaGoc" type="text">
+    <span>Nhập giá khuyến mãi</span>
+    <input name="giaKhuyenMai" type="text">
+    <button class="adminAdd_submit" type="submit">Thêm</button>
+</form>

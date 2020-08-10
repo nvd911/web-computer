@@ -1,0 +1,43 @@
+* {
+    font-family: sans-serif;
+
+}
+
+.product_btnAdd {
+    padding: 5px 50px;
+    background-color: antiquewhite;
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
+
+.product_btnAdd>a {
+    text-decoration: none;
+    font-weight: 900;
+}
+
+.product_table {
+    border: 1px solid;
+}
+
+.product_table thead th {
+    border: 1px solid;
+}
+
+.product_table tbody td {
+    border: 1px solid;
+    text-align: center;
+}
+
+.product_btnDelete {
+    background-color: rgb(210, 110, 110);
+    padding: 5px;
+}
+
+.product_btnEdit {
+    background-color: rgb(204, 165, 113);
+    padding: 5px;
+}
+
+.product_table tbody td button a {
+    text-decoration: none;
+}

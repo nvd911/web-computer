@@ -1,0 +1,28 @@
+<div class="product">
+    <button class="product_btnAdd"><a href="/admin/add">Thêm sản phẩm</a></button>
+    <table class="product_table">
+        <thead>
+            <th>Tiêu đề</th>
+            <th>Mã sản phẩm</th>
+            <th>Ảnh sản phẩm</th>
+            <th>Tên sản phẩm</th>
+            <th>Giá gốc</th>
+            <th>Giá khuyến mãi</th>
+            <th>Chức năng</th>
+        </thead>
+        <% product.forEach((item)=>{%>
+        <tbody>
+            <td><%- item.title %></td>
+            <td><%- item.productCode %></td>
+            <td><%- item.image %></td>
+            <td><%- item.nameProduct %></td>
+            <td><%- item.priceVitua %></td>
+            <td><%- item.price %></td>
+            <td>
+                <button class="product_btnEdit"><a href="/admin/edit/<%-item._id%>">Sửa</a></button>
+                <button class="product_btnDelete"><a href="/admin/delete/<%-item._id%>">Xoá</a></button>
+            </td>
+        </tbody>
+        <%})%>
+    </table>
+</div>

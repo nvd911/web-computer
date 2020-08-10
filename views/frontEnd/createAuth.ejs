@@ -1,0 +1,47 @@
+<style>
+    .authCreate {
+        display: flex;
+        flex-direction: column;
+        border: 1px solid rgb(207, 231, 98);
+        align-items: center;
+        position: relative;
+        left: 550px;
+        top: 100px;
+        width: 200px;
+        background-color: hsl(36, 79%, 64%);
+        border-radius: 3px;
+    }
+
+    .authCreate>form {
+        margin-bottom: 5px;
+        margin-top: 5px;
+    }
+
+    .authCreate_input {
+        padding: 3px 20px;
+        border-radius: 3px;
+        border: none;
+    }
+
+    .authCreate_submit {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        padding: 5px;
+        border: none;
+        border-radius: 3px;
+    }
+</style>
+
+<div class="authCreate">
+    <p>
+        Tạo tài khoản
+    </p>
+    <form action="http://localhost:3000/auth/add" method="post">
+        <span>User name</span>
+        <input class="authCreate_input" name="userName" type="text">
+        <span style="margin-bottom: 5px;
+    margin-top: 5px;">Password</span>
+        <input name="password" type="text">
+        <button class="authCreate_submit" type="submit">Lưu</button>
+    </form>
+</div>

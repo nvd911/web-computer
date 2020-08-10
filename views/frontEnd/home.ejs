@@ -1,0 +1,161 @@
+<button><a href="/auth/logout">Logout</a></button>
+<div class="header">
+    <div class="menu_start">
+        <ul>
+            <li>Hệ thống Showroom</li>
+            <li class="menu_start_gradient">Bán hàng trực tuyến</li>
+            <li class="menu_start_gradient">Kinh doanh showroom</li>
+            <li>Trang tin công nghệ</li>
+            <li>Tổng hợp khuyến mại</li>
+            <li>Tra cứu bảo hành</li>
+            <li>Tải hợp đồng</li>
+            <li>In hoá đơn điện tử</li>
+        </ul>
+    </div>
+    <div class="menu_center">
+
+        <ul>
+            <li class="menu_center_logo">
+                <img src="https://hanoicomputercdn.com/media/lib/logo-trang.png" alt="">
+            </li>
+            <li class="menu_center_btn">
+                <button>
+                    <a href="#">Xây dựng cấu hình máy tính</a>
+                </button>
+            </li>
+            <li class="menu_center_btn">
+                <button>
+                    <a href="#">Xây dựng tản nhiệt nước PC</a>
+                </button>
+            </li>
+            <li class="menu_center_muaHang1">
+                <small>Mua hàng Online</small>
+                <strong>19001903</strong>
+            </li>
+            <li class="menu_center_muaHang1">
+                <small>Đăng ký</small>
+                <small>Đăng nhập</small>
+            </li>
+            <li>Giỏ hàng</li>
+        </ul>
+    </div>
+    <div class="menu_end">
+        <div class="menu_end_select">
+            <button class="menu_and_btn">
+                DANH MỤC SẢN PHẨM
+            </button>
+            <button class="menu_and_btn">
+                CHÍNH SÁCH - HƯỚNG DẪN
+            </button>
+            <button class="menu_and_btn menu_and_timTheoHang">
+                TÌM THEO HÃNG
+            </button>
+        </div>
+        <div class="menu_end_search">
+            <button class="menu_end_tatCaDanhMuc">
+                <small>Tất cả danh mục</small>
+            </button>
+            <input type="text" placeholder="Nhập tên sản phẩm, từ khoá cần tìm">
+
+        </div>
+        <button class="menu_end_timKiem">Search</button>
+    </div>
+</div>
+
+<div class="home">
+    <div class="home_info">
+        <ul>
+            <li>Laptop, Máy tính bảng</li>
+            <li>PC Gaming, Streaming</li>
+            <li>PC Đồ hoạ, Render, Máy Chủ</li>
+            <li>PC Văn Phòng, AIO, Mini PC</li>
+            <li>Thiết bị văn phòng</li>
+            <li>Linh kiện máy tính</li>
+            <li>PC Văn Phòng, AIO, Mini PC</li>
+            <li>Linh kiện máy tính</li>
+            <li>PC Văn Phòng, AIO, Mini PC</li>
+            <li>Linh kiện máy tính</li>
+            <li>PC Văn Phòng, AIO, Mini PC</li>
+            <li>Linh kiện máy tính</li>
+            <li>PC Văn Phòng, AIO, Mini PC</li>
+            <li>Linh kiện máy tính</li>
+            <li>PC Văn Phòng, AIO, Mini PC</li>
+        </ul>
+        <img class="home_banner1"
+            src="https://hanoicomputercdn.com/media/banner/01_Aug86088b1349db9f9505d79c6f64c1bffb.png" alt="">
+    </div>
+    <div class="banner">
+        <img class="home_banner2"
+            src="https://hanoicomputercdn.com/media/banner/01_Auga85bd6eec1690458e802e99d59060c49.png" alt="">
+        <img class="home_banner2"
+            src="https://hanoicomputercdn.com/media/banner/01_Aug8c21c7e7ddae6c7f8223da3ba55c9c20.png" alt="">
+        <img class="home_banner2"
+            src="https://hanoicomputercdn.com/media/banner/01_Aug0cac963ae1bfa0fea6dccd14b1e7e334.png" alt="">
+    </div>
+</div>
+
+<div class="product">
+    <%product.forEach((item)=>{%>
+    <div class="productItem">
+        <p class="product_name"><%-item.title%></p>
+        <p class="product_id">MÃ SP: <%-item.productCode%></p>
+        <img src="./upload/<%-item.image%>" alt="">
+        <small class="product_title"><%-item.nameProduct%></small>
+        <p class="product_priceVirtua"><%-item.priceVitua%> đ</p>
+        <p class="product_price"><%-item.price%> đ</p>
+        <div class="product_cart">
+            <a class="product_stocking" href="#">Còn hàng</a>
+            <a class="product_addToBasket" href="#">Thêm vào giỏ</a>
+        </div>
+        <button class="product_seeProduct">Xem tất cả sản phẩm</button>
+    </div>
+    <%})%>
+</div>
+
+<div class="support">
+    <p class="support_title">ĐĂNG KÝ NHẬN EMAIL THÔNG BÁO KHUYẾN MẠI HOẶC ĐỂ ĐƯỢC TƯ VẤN MIỄN PHÍ</p>
+    <div class="support_search">
+        <input placeholder="Nhập email hoặc sô điện thoại của bạn" type="text">
+        <button>Gửi</button>
+    </div>
+</div>
+
+<div class="contact">
+    <p class="contact_title">HỆ THỐNG CÁC SHOWROOM CỦA HANOICOMPUTER</p>
+    <div class="contact_Item">
+        <div class="haiBaTrung">
+            <p>HANOICOMPUTER - HAI BÀ TRƯNG</p>
+            <small>Số 129+131 Lê Thanh Nghị - Hai Bà Trưng - Hà Nội</small>
+            <small> Tel: 1900 1903 (máy lẻ 101)</small>
+            <small> Bảo hành: 1900 1903 (máy lẻ 108)</small>
+            <small>Email: kinhdoanh.haibatrung@hanoicomputer.com</small>
+            <small>Thời gian mở cửa: Từ 9h-20h hàng ngày</small>
+        </div>
+
+
+        <div class="haiBaTrung">
+            <p>HANOICOMPUTER - HAI BÀ TRƯNG</p>
+            <small>Số 129+131 Lê Thanh Nghị - Hai Bà Trưng - Hà Nội</small>
+            <small> Tel: 1900 1903 (máy lẻ 101)</small>
+            <small> Bảo hành: 1900 1903 (máy lẻ 108)</small>
+            <small>Email: kinhdoanh.haibatrung@hanoicomputer.com</small>
+            <small>Thời gian mở cửa: Từ 9h-20h hàng ngày</small>
+        </div>
+
+        <div class="haiBaTrung">
+            <p>HANOICOMPUTER - HAI BÀ TRƯNG</p>
+            <small>Số 129+131 Lê Thanh Nghị - Hai Bà Trưng - Hà Nội</small>
+            <small> Tel: 1900 1903 (máy lẻ 101)</small>
+            <small> Bảo hành: 1900 1903 (máy lẻ 108)</small>
+            <small>Email: kinhdoanh.haibatrung@hanoicomputer.com</small>
+            <small>Thời gian mở cửa: Từ 9h-20h hàng ngày</small>
+        </div>
+    </div>
+
+    <div class="footer">
+        <small>© 2020 Công Ty Cổ Phần Máy Tính Hà Nội</small>
+        <small>Địa chỉ: Số 129 + 131, phố Lê Thanh Nghị, Phường Đồng Tâm, Quận Hai Bà Trưng, Hà Nội</small>
+        <small>GPĐKKD số 0101161194 do Sở KHĐT Tp.Hà Nội cấp ngày 31/8/2001</small>
+        <small>Email: hnc@hanoicomputer.com. Điện thoại: 1900 1903</small>
+    </div>
+</div>

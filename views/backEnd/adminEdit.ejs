@@ -1,0 +1,36 @@
+<style>
+    .adminEdit_title {
+        font-weight: 500;
+        font-size: 30px;
+    }
+
+    .adminEdit_form {
+        display: flex;
+        flex-direction: column;
+        max-width: 800px;
+    }
+
+    .adminEdit_submit {
+        margin-top: 20px;
+    }
+</style>
+
+<p class="adminEdit_title">Cập nhật sản phẩm</p>
+<form class="adminEdit_form" action="http://localhost:3000/admin/edit" method="post" enctype="multipart/form-data">
+
+    <span>Nhập tiêu đề</span>
+    <input name="tieuDe" type="text" placeholder=<%-product.title %>>
+    <span>Nhập mã sản phẩm</span>
+    <input name="maSP" type="text" placeholder=<%-product.productCode %>>
+    <span>Chọn ảnh</span>
+    <input name="avatar" type="file" placeholder=<%-product.image %>>
+    <span>Nhập tên sản phẩm</span>
+    <input name="tenSP" type="text" placeholder=<%-product.nameProduct %>>
+    <span>Nhập giá gốc</span>
+    <input name="giaGoc" type="text" placeholder=<%-product.priceVitua %>>
+    <span>Nhập giá khuyến mãi</span>
+    <input name="giaKhuyenMai" type="text" placeholder=<%-product.price %>>
+    <input name="id" value=<%- product._id %> type="hidden">
+
+    <button class="adminEdit_submit" type="submit">Cập nhật sản phẩm</button>
+</form>

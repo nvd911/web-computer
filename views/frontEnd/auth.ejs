@@ -1,0 +1,30 @@
+<script>
+    $(document).ready(() => {
+        $(".auth_loginBtn").mouseenter(() => {
+            $(".auth_loginBtn").css({
+                "background-color": "cadetblue"
+            })
+        })
+        $(".auth_loginBtn").mouseleave(() => {
+            $(".auth_loginBtn").css({
+                "background-color": "white"
+            })
+        })
+    });
+</script>
+
+<div class="auth">
+    <p>LOGIN</p>
+
+    <form action="http://localhost:3000/auth" method="post">
+
+        <span>User name</span>
+        <input type="text" name="userName">
+        <span>Password</span>
+        <input type="text" name="password">
+        <button class="auth_loginBtn" type="submit">Login</button>
+        <p>Nếu chưa có tài khoản, tạo tài khoản dưới đây</p>
+        <button><a href="http://localhost:3000/auth/add">Create account</a></button>
+    </form>
+
+</div>
